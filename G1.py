@@ -15,13 +15,15 @@ graph = {}
 
 
 def dfs(graph, node, visited):
-    
-    print(node)
+    # print(node)
+    sm = 0
     visited.add(node)
 
     for item in graph[node]:
         if item not in visited:
-            dfs(graph,item,visited)
+            sm+=dfs(graph,item,visited)
+    
+    return sm+1
 
 
 for key in nodes:
@@ -36,7 +38,7 @@ visited = set()
 answer = []
 for item in nodes:
     if item not in visited:
-        temp = dfs(graph,'A', visited)
+        temp = dfs(graph,item, visited)
         answer.append(temp)
 
 print(answer)
