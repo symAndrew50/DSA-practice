@@ -1,7 +1,4 @@
-print("Hello Wrold\n")
-
-
-
+print("hello World")
 
 
 
