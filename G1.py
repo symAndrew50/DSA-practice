@@ -1,4 +1,11 @@
-print("hello World")
+# Connected components
 
-
+edges = [
+    [],
+    [],
+    [],
+    [],
+    [],
+    []
+]
 
